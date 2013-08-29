@@ -15,6 +15,10 @@ In the file conf/pig.properties, you need to set the following parameters:
 - `pig.context.filepath` : the location of the PactClient to use
 
 
+Prerequisites
+-------------
+* [Stratosphere 0.2] (http://stratosphere.eu/)
+
 Build with
 -----------
 `ant` in the home directory. After build, you need to manually copy `PigPlanAssemblerExt.class` in the directory which is the root directory of the jar that is created to be submitted to Nephele (this is the Pig root directory at the moment)
@@ -22,7 +26,8 @@ Build with
 
 Run with
 ---------
-`./bin/pig -x strato` in Pig’s root directory
+* `./bin/pig -x local_strato` in the root directory for local mode
+* `./bin/pig -x strato` in Pig’s root directory for distributed mode
 
 
 Current Capabilities
