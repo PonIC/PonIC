@@ -225,6 +225,8 @@
         <fileset dir="${lib.dir}" includes="*.jar"/>
         <fileset file="${ivy.lib.dir}/${zookeeper.jarfile}"/>
         <fileset dir="${ivy.lib.dir}" includes="*.jar"/>
+	<!-- AVK -->
+	<fileset dir="${basedir}/stratosphere_jars" includes="*.jar"/>
     </path>
 
     <!-- javadoc-classpath -->
